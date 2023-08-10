@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>E-LANGAGE</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-default toto">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">E-LANGAGE</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right menu">
+                        <li><a href="acceuil.html">Acceuil</a></li>
+                        <li><a href="nos-cours.html">Nos cours</a></li>
+                        <li><a href="tarif.html">Tarif</a></li>
+                        <li><a href="contact.html" class="selected-menu">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid bg-3 text-justify" style="padding-top: 70px; padding-bottom: 50px; padding-left: 20%; padding-right: 20%; background-color: bisque;">
+            <div class="contact-buttons">
+                <button id="btn-contact" type="button" class="btn btn-warning">Contact</button>
+                <button id="btn-inscription" type="button" class="btn btn-info">Inscription</button>
+            </div>
+            <div id="div-contact">
+                <p class="pContact">
+                    Pour toute demande d'informations, veuillez remplir le formulaire de contact si dessous.<br />
+                    NOUS VOUS REPONDRONS DANS LES PLUS BREFS DÉLAIS (SOUS 24 HEURES).
+                </p>
+                <form action="form-contact.php" method="post">
+                    <div class="form-group">
+                        <label for="nom">Nom *</label>
+                        <input type="nom" class="form-control" id="nom" placeholder="votre nom" name="nom" />
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prenom*</label>
+                        <input class="form-control" type="text" name="prenom" id="prenom" placeholder="votre prenom" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="abc@exemple.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone*</label>
+                        <input class="form-control" type="tel" id="telephone" name="telephone" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="cours">Je veux apprendre </label>
+                        <select id="cours" name="cours" placeholder="je veux apprendre" class="form-control" required>
+                            <option value=""></option>
+                            <option value="Français">Français</option>
+                            <option value="anglais">Anglais</option>
+                            <option value="arabe">Arabe</option>
+                            <option value="allemand">Allemand</option>
+                            <option value="prepa">Prépa: TCF,DELF,DALF</option>
+                            <option value="prepa">Prépa: TOEIC</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mesage">Messageddd:</label>
+                        <textarea name="mesage" id="mesage" cols="50" rows="5" maxlength="200" placeholder="max. 200chars" class="form-control"></textarea>
+                    </div>
+                    <button id="btn-envoyer" class="btn btn-success form-control">ENVOYER</button>
+                </form>
+            </div>
+            <div id="div-contact-envoyer" class="text-center">
+                <h1>MERCI!</h1>
+                <h2>Votre formulaire a été enregistré avec succès et sera traité dans les plus brefs délais.</h2>
+                <img src="images/verifie.jpg" alt="" height="500px" width="500px" />
+            </div>
+            <div id="div-inscription">
+                <h3>Formulaire d'inscription (2022/2023):</h3>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="nom">Nom*</label>
+                        <input type="text" name="nom" id="nom" placeholder="votre nom" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prenom*</label>
+                        <input type="text" name="prenom" id="prenom" placeholder="votre prenom" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="date_naissance">Date de naissance :</label>
+                        <input type="date" id="date_naissance" name="date_naissance" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="genre">Genre:</label>
+                        <input type="radio" id="homme" name="genre" value="homme" />
+                        <label for="masculin">Homme</label>
+                        <input type="radio" id="femme" name="genre" value="femme" />
+                        <label for="feminin">Femme</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="pays">Pays:</label>
+                        <input type="pays" name="pays" id="pays" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" name="nom" id="email" placeholder="abc@exemple.com" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone*</label>
+                        <input type="tel" id="telephone" name="telephone" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="cours">Je veux apprendre:</label>
+                        <select id="cours" name="cours" placeholder="je veux apprendre" class="form-control" required>
+                            <option value=""></option>
+                            <option value="Français">Français</option>
+                            <option value="anglais">Anglais</option>
+                            <option value="arabe">Arabe</option>
+                            <option value="allemand">Allemand</option>
+                            <option value="prepa">Prépa: TCF,DELF,DALF</option>
+                            <option value="prepa">Prépa: TOEIC</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="prix-par-minute">Durée</label>
+                        <select id="prix-par-minute" name="prix-par-minute" placeholder="type de cours" class="form-control" required>
+                            <option value="0"></option>
+                            <option value="6">Leçons de 45 min</option>
+                            <option value="7">Leçons de 60 min</option>
+                            <option value="10">Leçons de 90 min</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre-de-cours">Nombre de cours*</label>
+                        <input type="number" id="nombre-de-cours" name="nombre-de-cours" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label id="prix-total" for="total">Prix total : 0 euros</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Telephone*</label>
+                        <input type="phone" id="telephone" name="telephone" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Type de cours:</label>
+                        <select id="type" name="type" placeholder="type de cours" class="form-control" required>
+                            <option value=""></option>
+                            <option value="en-groupe">En groupe</option>
+                            <option value="individuelle">Individuelles</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="commentaire">Votre commentaire:</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" cols="40" rows="4" maxlength="100" class="form-control" placeholder="max. 100chars"></textarea>
+                    </div>
+                    <input id="je_minscris" type="submit" value="Je m'inscris" class="btn btn-success form-control" />
+                </form>
+            </div>
+            <div id="div-inscription-payer">
+                <h3>Formulaire de paiement</h3>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="type">Type de carte:</label>
+                        <select id="type" name="type" placeholder="type de carte" class="form-control" required>
+                            <option value=""></option>
+                            <option value="mastercard">MasterCard</option>
+                            <option value="visa">VISA</option>
+                            <option value="CB">CB</option>
+                            <option value="maestro">Maestro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" placeholder="votre nom" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Numéro de carte bancaire:</label>
+                        <input type="numero" name="numero" id="numero" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="expiration">Date d'expiration:</label>
+                        <input type="month" id="expiration" name="expiration" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV:</label>
+                        <input type="password" id="cvv" name="cvv" maxlength="3" class="form-control" required />
+                    </div>
+                    <input id="btn-valider-payement" type="submit" value="Valider" class="btn btn-success form-control" />
+                </form>
+            </div>
+            <div id="div-inscription-payer-valider" class="text-center">
+                <h1>Bienvenue chez E-LANGAGE!</h1>
+                <h2>Notre Service Client vous contactera pour programmer vos cours</h2>
+                <img src="images/verifie.jpg" alt="" height="500px" width="500px" />
+            </div>
+        </div>
+        <footer class="container-fluid bg-4 text-center">
+            <a href="https://www.facebook.com/votre-page-facebook/">
+                <img src="images/facebook.png" alt="Logo Facebook" width="50" height="50" />
+            </a>
+            <a href="https://www.instagram.com/votre-page-instagram/">
+                <img src="images/instagram.png" alt="Logo Instagram" width="50" height="50" />
+            </a>
+            <a href="https://www.twitter.com/votre-page-twitter/">
+                <img src="images/twitter.png" alt="Logo Twitter" width="50" height="50" />
+            </a>
+            <a href="https://www.whatsapp.com/votre-page-whatsapp/">
+                <img src="images/whatsapp.png" alt="Logo Whatsapp" width="50" height="50" />
+            </a>
+            <p>&copy; 2023 E-langage ~ Ecole en ligne ~ Tout droit réservés</p>
+        </footer>
+    </body>
+    <script src="script2.js"></script>
+</html>

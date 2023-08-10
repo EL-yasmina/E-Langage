@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>E-LANGAGE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default toto">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">E-LANGAGE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right menu">
+        <li> <a href="acceuil.html">Acceuil</a></li>
+        <li> <a href="nos-cours.html">Nos cours</a></li> 
+        <li> <a href="tarif.html" class="selected-menu">Tarif</a></li>
+        <li> <a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid bg-3 text-justify" style="padding-top: 0;padding-bottom: 0; ">   
+    
+    <div class="row">
+        
+       
+      <div class="col-sm-8" style="background-color: #f7f5f1; height: 550px;padding-top: 70px;">
+        <h1 class="tarif-titre">Nos tarif:</h1>
+        <div class="tarif-buttons">
+            <button id="btngrp" type="button" class="btn btn-info" >Leçons en groupe</button>
+            <button id="btnindv" type="button" class="btn btn-danger " >Leçons individuelle</button>
+      </div> 
+        <div id="groupe">
+         <table class="table table-bordered border-primary">
+            <thead>
+              <tr class="warning">
+                <th scope="col">Durée</th>
+                <th scope="col">1 leçon</th>
+                <th scope="col">10 leçons</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="info">
+                <td>Leçons de 45 min</td>
+                <td>6 €	</td>
+                <td>55 € (Economise 5€)</td>
+              </tr>
+              <tr class="info">
+                <td>Leçons de 60 min</td>
+                <td>7 €	</td>
+                <td>65 € (Economise 5€)</td>
+              </tr>
+              <tr class="info">
+                <td>Leçons de 90 min</td>
+                <td>10 €	</td>
+                <td>95 € (Economise 5€)</td>
+              </tr>
+            </tbody>
+         </table>
+        </div>
+        <div id="indiv">
+            <table class="table">
+               <thead>
+                 <tr class="warning">
+                   <th scope="col" >Durée</th>
+                   <th scope="col" >1 leçon</th>
+                   <th scope="col" >10 leçons</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr  class="danger">
+                   <td>Leçons de 45 min</td>
+                   <td>14 €	</td>
+                   <td>135 € (Economise 5€)</td>
+                 </tr>
+                 <tr class="danger">
+                   <td>Leçons de 60 min</td>
+                   <td>18 €	</td>
+                   <td>175 € (Economise 5€)</td>
+                 </tr>
+                 <tr class="danger">
+                   <td>Leçons de 90 min</td>
+                   <td>25 €	</td>
+                   <td>245 € (Economise 5€)</td>
+                 </tr>
+               </tbody>
+            </table>
+           </div>
+       </div>
+       <div class="col-sm-4" style="background-color: #F7F3EA; height: 550px;padding-top: 70px;">         
+        <img src="images/ami.jpg" class="img-responsive margin" style="display:inline" alt="Bird" width="500" height="500">
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-12" style="background-color: #d6c08e; height: 550px;padding-top: 70px;">
+            <h1 class="tarif-titre">Nos avantages:</h1>
+            <ul>
+                <li>La première séance gratuite permet aux étudiants de tester les cours avant de s'engager financièrement.</li>
+                <li>La garantie "satisfait ou remboursé" à partir de la deuxième séance offre une tranquillité d'esprit aux étudiants.</li>
+                <li>E-langages offre une grande flexibilité en termes d'horaires grâce à son format en ligne.</li>
+                <li>Les professeurs de qualité certifiée avec de l'expérience sont un atout important pour E-langages.</li>
+                <li>L'apprentissage en ligne offre des leçons interactives et une gamme d'outils et de ressources pour l'apprentissage.</li>
+                <li>Les sessions individuelles aident les étudiants à travailler sur leurs compétences spécifiques.</li>
+                <li>Référez un ami et obtenez 10 euros de réduction pour 5 cours.</li>
+              </ul>           
+              <a href="#" class="btn btn-danger btn-inscrir-tarif">
+                S'INSCRIRE
+              </a>   
+        </div> 
+    </div>
+</div>
+
+<footer class="container-fluid bg-4 text-center">
+    <a href="https://www.facebook.com/votre-page-facebook/">
+        <img src="images/facebook.png" alt="Logo Facebook" width="50" height="50">
+    </a>
+    <a href="https://www.instagram.com/votre-page-instagram/">
+        <img src="images/instagram.png" alt="Logo Instagram" width="50" height="50">
+    </a>
+    <a href="https://www.twitter.com/votre-page-twitter/">
+        <img src="images/twitter.png" alt="Logo Twitter" width="50" height="50">
+    </a>
+    <a href="https://www.whatsapp.com/votre-page-whatsapp/">
+        <img src="images/whatsapp.png" alt="Logo Whatsapp" width="50" height="50">
+    </a>
+
+    <p>&copy;  2023 E-langage ~ Ecole en ligne ~ Tout droit réservés</p>
+    
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
